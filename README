@@ -1,0 +1,14 @@
+Flask-MailErrors
+----------------
+
+Simplifies setup of sending email on errors in Flask applications.
+
+Uses Flask-Mail extension to send email. Read about available settings on http://packages.python.org/flask-mail/.
+
+Flask-MailErrors sets DEFAULT_MAIL_SENDER to webmaster@localhost and requires ADMINS setting, otherwise emails won't be sent. ADMINS must be specified as list of tuples ('title', 'email@example.org')
+
+Assuming SMTP server is running locally and Flask app is created, configuration is easy as:
+
+    from flask.ext import mailerrors
+    app.config.update(ADMINS=[('admin', 'admin@example.net')])
+    mailerrors.init_app(app)
