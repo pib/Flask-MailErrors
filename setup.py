@@ -11,7 +11,7 @@ from setuptools import setup
 setup(
     name='Flask-MailErrors',
     version='1.0',
-    url='http://github.com/flask-mailerrors/',
+    url='http://github.com/Flask-MailErrors/',
     license='BSD',
     author='Sergey Panfilov',
     author_email='sergray@gmail.com',
