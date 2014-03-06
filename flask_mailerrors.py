@@ -1,9 +1,10 @@
 import logging
 
-from flaskext.mail import Mail, Message
+from flask.ext.mail import Mail, Message
 
 
 class MailHandler(logging.Handler):
+
     """Implements sending email using Flask-Mail"""
 
     def __init__(self, app, mail, formatter=None):
